@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fizzbuzz</title>
+<style>
+
+
+
+</style>
+    
+</head>
+<body>
+ <h1>Whiteboard coding challenges</h1>
+<form>
+ <button type="button" onclick="fizzBuzz()">Fizzbuzz</button>
+ <button type="button" onclick="fibonacci()">Fibonacci</button>
+</form>
+
+<script>
+
+function fizzBuzz() {
+
+   
+    i = 1;
+    text = "";
+    while (i <= 100) {
+        if (i % 3 === 0){
+            document.write('fizz number= ' + i + ' ');
+           
+
+        } 
+        if (i % 5 === 0){
+            document.write('buzz number= ' + i + ' ');
+          
+
+        } 
+        if (i % 3 === 0 && i % 5 === 0){
+            document.write('fizzbuzz number= ' + i + ' ');
+         
+
+        } 
+        document.write('<br>');
+        i++;
+        
+      }
+}
+
+function fibonacci() {
+
+
+var number = [0, 1];
+for(var i=number.length; i<10; i++) {
+    number[i] = number[i-2] + number[i-1];
+}
+document.write(number);
+} 
+
+</script>
+</body>
+
+
+</html>
+
+
+
